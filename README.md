@@ -9,7 +9,7 @@ This is my response to the final project assignment from HarvardX PH526x's "Usin
 The assignment provides two files:
 1. The first file, [train_time_series.csv](https://courses.edx.org/assets/courseware/v1/b98039c3648763aae4f153a6ed32f38b/asset-v1:HarvardX+PH526x+2T2021+type@asset+block/train_time_series.csv), contains the raw accelerometer data, which has been collected using the [Beiwe research platform](https://github.com/onnela-lab/beiwe-backend), and it has the following format:
   <code>timestamp, UTC time, accuracy, x, y, z</code>
-  x, y, and z correspond to measurements of linear acceleration along each of the three orthogonal axes.
+  (x, y, and z correspond to measurements of linear acceleration along each of the three orthogonal axes)
 2. The second file, [train_labels.csv](https://courses.edx.org/assets/courseware/v1/d64e74647423e525bbeb13f2884e9cfa/asset-v1:HarvardX+PH526x+2T2021+type@asset+block/train_labels.csv), contains the activity labels. the activities have been encoded with integers as follows:
   - 1 = standing
   - 2 = walking
