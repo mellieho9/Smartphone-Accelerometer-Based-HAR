@@ -15,9 +15,14 @@ The assignment provides two files:
   - 2 = walking
   - 3 = stairs down
   - 4 = stairs up
+
 ## My Approach
 Since the labels in train_labels.csv are only provided for every 10th observation in train_time_series.csv, this implies that each labeled signal is sampled from 10 signals. I combined the 3 axes components in the time series to create a 4th component - the square root of the sum of the axes' squares. 
 1. With the above, I converted the training_time_series dataframe of shape (3744,3) into a numpy array of shape (375,10,4)
 2. I extracted features from the array using frequency transformation
 3. I split those features into training and test sets with an 80:20 ratio. While the training set is used to the train my classifier model, the test set is used to compute the test accuracy. 
 4. I randomized the training set to prevent bias and used oversampling with SMOTE on it to prevent activity class imbalance.
+
+## Inspirations
+- Decision Tree Adventures 2 — Explanation of Decision Tree .... https://medium.datadriveninvestor.com/decision-tree-adventures-2-explanation-of-decision-tree-classifier-parameters-84776f39a28
+- personality-prediction-from-text/model_eval.py at master .... https://github.com/jcl132/personality-prediction-from-text/blob/master/model_eval.py
